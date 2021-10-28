@@ -1,9 +1,14 @@
 /* ============= /GENERAL ======= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 12px;
-    color: #666;
+    color: #000;
 }
 
 img{
@@ -12,7 +17,10 @@ img{
 
 h2, h4{
     font-size: 24px;
-    text-align: center;
+}
+h2{
+    color: #666;
+    padding: 10px;
 }
 h4{
     margin: 0;
@@ -43,12 +51,13 @@ h5{
 /* ============= /HEADER ======= */
 
 header{
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     background-color: #EAC926;
 }
 
 header img{
-    max-width: 130px;
+    display: block;
+    max-width: 140px;
     padding: 10px;
 }
 
@@ -59,6 +68,7 @@ header img{
 
 .contenedor-header-principal p{
     text-align: center;
+    padding: 10px;
 }
 
 .btn-buscador{
@@ -69,6 +79,10 @@ header img{
 }
 
 /* == /Nav ======= */
+
+nav{
+    display: none;
+}
 
 nav ul{
     list-style:none;
@@ -91,7 +105,7 @@ nav a, nav a:hover, nav a:active, nav a:visited  {
     width: 40px;
     height: 40px;
     padding: 8px 10px;
-    margin: 10px auto;
+    margin: auto;
     color: #FFF;
     border-radius: 4px;
     background-color: #1259c3;
@@ -107,26 +121,62 @@ main{
     overflow: hidden;
 }
 
-
-main > section > article {
-    padding: 20px;
-    background: #FFF;
-    margin: 20px;
+main > section {
+    width: 90%;
+    margin: 10px auto;
 }
 
+/* Articulo */
+main > section > article {
+ 
+    background: #FFF;
+    margin: 10px auto;
+    box-shadow: 0px;
+}
+
+main > section > article > .contenedor__articulo{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+}
+
+
+/* Imagen */
+main > section:nth-child(1) > article:nth-child(2) > img{
+    padding-bottom: 10px;
+}
+
+/* Envios */
+main > section > article > div > div {
+    font-size: 16px;
+    padding-top: 12px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    color: #39b54a;
+    border: solid 2px #39b54a;;
+    overflow:hidden;
+    text-align: center;
+    margin-bottom: 10px;
+
+  }
+
 /* Precios */
-main > section > article > p:nth-child(2) {
+main > section > article > div > p:nth-child(2) {
     font-size: 18px;
+    font-weight: 700;
 }
 
 /* Descuentos */
-main > section > article > p:nth-child(3) {
+main > section > article > div > p:nth-child(3) {
     font-size: 16px;
+    counter-reset: #39b54a;
 }
 /* Descripcion */
-main > section > article > h4 {
+main > section > article > div > h4{
+    display: none;
     font-size: 16px;
-    text-align: left;
+    margin-top: 20px;
 }
 
 /* ============= /FIN MAIN ======= */
@@ -150,4 +200,27 @@ footer article i{
 footer article p{
     margin: 0;
     padding: 0 30px;
+}
+
+
+/* ============= /NAV TABLETS ======= */
+@media (min-width: 361px){
+
+    /* Descripcion */
+    main > section > article > div > h4{
+        display: inline;
+    }
+    nav{
+        display: block;
+    }
+}
+
+/* ============= /NAV DESKTOP ======= */
+@media (min-width: 768px){
+    main > section > article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
 }

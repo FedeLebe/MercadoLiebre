@@ -1,3 +1,5 @@
 ### Node ###
 # dependencies
 /node_modules
+# Archivos Basura de Windows
+desktop.ini
