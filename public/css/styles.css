@@ -1,185 +1,184 @@
-/* ============= /GENERAL ======= */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;    
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    color: #000;
-}
-
-img{
-    width: 100%;
-}
-
-h2, h4{
-    font-size: 24px;
-}
-h2{
-    color: #666;
-    padding: 10px;
-}
-h4{
-    margin: 0;
-}
-h5{
-    font-size: 16px;
-    margin: 0;
-}
-.amarillo{
-    color: #EAC926;
-}
-.azul{
-    color: #03264C;
-}
-.celeste{
-    color: #1259c3;
-}
-.gris-oscuro{
-    color: #666;
-}
-.gris-claro{
-    color: #ebebeb;
-}
-.verde{
-    color: #39b54a;
-}
-
-/* ============= /HEADER ======= */
-
-header{
-    padding-bottom: 15px;
-    background-color: #EAC926;
-}
-
-header img{
-    display: block;
-    max-width: 140px;
-    padding: 10px;
-}
-
-.contenedor-header-principal{
-    display: block;
-    padding: 20px 30px;
-}
-
-.contenedor-header-principal p{
-    text-align: center;
-    padding: 10px;
-}
-
-.btn-buscador{
-    font-size: 12px;
-    padding: 1px;
-    color: #000;
+    font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-/* == /Nav ======= */
-
-nav{
-    display: none;
+h3{
+    font-size: 24px;
 }
 
-nav ul{
-    list-style:none;
-    padding: 0;
-    margin: 0;
+p{
+    font-size: 12px;
 }
 
-nav ul:nth-child(2) {
-    margin-top: 20px;
+
+/* ============= /HEADER ======= */
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
 }
 
-nav a, nav a:hover, nav a:active, nav a:visited  {
-    color: #000;
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
     text-decoration: none;
+    color: #000;
 }
 
+header .form .input{
+    color: #666;
+    padding: 2px;
+}
 
-.burger-menu{
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 8px 10px;
-    margin: auto;
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
     color: #FFF;
-    border-radius: 4px;
-    background-color: #1259c3;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
 }
 
-
-/* ============= /FIN HEADER ======= */
+/* ============= FIN HEADER ======= */
 
 /* ============= /MAIN ======= */
 
-main{
-    background: #ebebeb;
-    overflow: hidden;
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-main > section {
-    width: 90%;
-    margin: 10px auto;
-}
-
-/* Articulo */
-main > section > article {
- 
-    background: #FFF;
-    margin: 10px auto;
-    box-shadow: 0px;
-}
-
-main > section > article > .contenedor__articulo{
-    padding: 15px;
-    border-top: 1px solid #ebebeb;
-    text-align: left;
-}
-
-
-/* Imagen */
-main > section:nth-child(1) > article:nth-child(2) > img{
-    padding-bottom: 10px;
-}
-
-/* Envios */
-main > section > article > div > div {
-    font-size: 16px;
-    padding-top: 12px;
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    color: #39b54a;
-    border: solid 2px #39b54a;;
-    overflow:hidden;
-    text-align: center;
-    margin-bottom: 10px;
-
-  }
-
-/* Precios */
-main > section > article > div > p:nth-child(2) {
+.price{
     font-size: 18px;
-    font-weight: 700;
+    width: 30%;
 }
 
-/* Descuentos */
-main > section > article > div > p:nth-child(3) {
-    font-size: 16px;
-    counter-reset: #39b54a;
+.discount{
+    width: 70%;
 }
-/* Descripcion */
-main > section > article > div > h4{
-    display: none;
+
+.discount,
+.description{
     font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
     margin-top: 20px;
 }
 
-/* ============= /FIN MAIN ======= */
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+
+/* ============= FIN MAIN ======= */
 
 /* ============= /FOOTER ======= */
 footer{
@@ -202,25 +201,37 @@ footer article p{
     padding: 0 30px;
 }
 
+/* ============= FIN FOOTER ======= */
 
-/* ============= /NAV TABLETS ======= */
 @media (min-width: 361px){
-
-    /* Descripcion */
-    main > section > article > div > h4{
-        display: inline;
-    }
-    nav{
+    main section article .description{
         display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
     }
 }
 
-/* ============= /NAV DESKTOP ======= */
-@media (min-width: 768px){
-    main > section > article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .burger-menu{
-        display: none;
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
     }
 }
