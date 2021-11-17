@@ -46,58 +46,67 @@
       </div>
     </header>
 
+    <main>
 
-    <form action="/" method="POST" class="create-form">
-      <input class="text" type="text" name="name" placeholder="Nombre y Apellido" required>
-      <input class="text" type="text" name="username" placeholder="Nombre de usuario" required>
-      <input class="text" type="email" name="email" placeholder="E-mail" required>
-      <h4 class="form-text">Fecha de nacimiento</h4>
-      <input class="text" type="date" name="birth-date" id="birth-date" min="1980-01-01" max="2050-01-01" required>
-      <input class="text" type="text" name="adress" placeholder="Domicilio" required>
-      <h4 class="form-text">Perfil del usuario</h4>
-      <div class="user-type">
-        <div>
-          <input type="radio" name="user-perfil" value="buy" checked> Comprador
+      <form action="/" method="POST" class="create-form">
+        
+        <input class="text" type="text" name="name" placeholder="Nombre y Apellido" required>
+        <input class="text" type="text" name="username" placeholder="Nombre de usuario" required>
+        <input class="text" type="email" name="email" placeholder="E-mail" required>
+        
+        <h4 class="form-text">Fecha de nacimiento</h4>
+        <input class="text" type="date" name="birth-date" id="birth-date" min="1980-01-01" max="2050-01-01" required>
+        <input class="text" type="text" name="adress" placeholder="Domicilio" required>
+        
+        <h4 class="form-text">Perfil del usuario</h4>
+        <div class="user-type">
+          <div>
+            <input type="radio" name="user-perfil" value="buy" checked> Comprador
+          </div>
+          <div>
+            <input type="radio" name="user-perfil" value="sell"> Vendedor
+          </div>
         </div>
-        <div>
-          <input type="radio" name="user-perfil" value="sell"> Vendedor
-        </div>
-      </div>
-      <h4 class="form-text">Categorias de Interes</h4>
-      <ul class="category-list">
-        <li>
-          <input type="checkbox" name="category" value="electro">
-          <label>Electro</label>
-        </li>
-        <li>
-          <input type="checkbox" name="category" value="fashion">
-          <label>Moda</label>
-        </li>
-        <li>
-          <input type="checkbox" name="category" value="home">
-          <label>Hogar</label>
-        </li>
-        <li>
-          <input type="checkbox" name="category" value="toy-store">
-          <label>Jugueteria</label>
-        </li>
-        <li>
-          <input type="checkbox" name="category" value="healthy-lifestyle">
-          <label>Vida sana</label>
-        </li>
-      </ul>
-      <h4 class="form-text">Subir foto de perfil</h4>
-      <input type="file" accept=".jpg" name="profile-picture" id="profile-picture">
-      <input class="text" type="password" name="password" placeholder="Contraseña">
-      <input class="text" type="password" name="confirmed-password" placeholder="Confirmar Contraseña">
-      <button class="form-button" type="submit">Enviar</button>
-      <button class="form-button" type="reset">Borrar</button>
-      </div>
-    </form>
+        
+        <h4 class="form-text">Categorias de Interes</h4>
+        <ul class="category-list">
+          <li>
+            <input type="checkbox" name="category" value="electro">
+            <label>Electro</label>
+          </li>
+          <li>
+            <input type="checkbox" name="category" value="fashion">
+            <label>Moda</label>
+          </li>
+          <li>
+            <input type="checkbox" name="category" value="home">
+            <label>Hogar</label>
+          </li>
+          <li>
+            <input type="checkbox" name="category" value="toy-store">
+            <label>Jugueteria</label>
+          </li>
+          <li>
+            <input type="checkbox" name="category" value="healthy-lifestyle">
+            <label>Vida sana</label>
+          </li>
+        </ul>
 
+
+        <h4 class="form-text">Subir foto de perfil</h4>
+        <input type="file" accept=".jpg" name="profile-picture" id="profile-picture">
+        <input class="text" type="password" name="password" placeholder="Contraseña">
+        <input class="text" type="password" name="confirmed-password" placeholder="Confirmar Contraseña">
+        <button class="form-button" type="submit">Enviar</button>
+        <button class="form-button" type="reset">Borrar</button>
+
+      </form>
+
+
+    </main>
 
     <footer>
-      <div class="footer">
+      <div class="footer contenedor">
         <div>
           <i class="fas fa-credit-card"></i>
           <h4>Pagá con tarjeta o en efectivo</h4>
